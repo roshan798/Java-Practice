@@ -6,12 +6,12 @@ public class Fibonacci {
         else return fibo(n-1)+fibo(n-2);
     }
     public static void Fibo(int n) {
-        int a=0,b=0,c=1;
+        int a=0,b=0,c;
         while(n--!=0) {
-            a=a+b;
             System.out.print(a+"  ");
+            c=a+b;
+            a=b;
             b=c;
-            c=a;
         }
     }
     public static void main(String[] args) {
